@@ -1,6 +1,7 @@
 import './App.css';
 import Navvbar from './components/Nav';
 import HeroPage from "./components/Hero";
+import Pricing from './components/Pricing';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>     
       <Navvbar/>
       <HeroPage/>
+      <Pricing/>
     </>
   );
 }

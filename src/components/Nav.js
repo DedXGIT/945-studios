@@ -1,13 +1,13 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from "../logo_945.png";
 import profileIcon from "../Company_logo2.png";
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
   { name: 'Pricing', href: '#', current: false },
+  { name: 'About', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
 
@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function Navvbar() {
   return (
-    <Disclosure as="nav" className="bg-[#000000] border-b-[0.2px] border-b-white">
+    <Disclosure as="nav" className="bg-[#020103] border-b-[0.2px] border-b-white">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -49,7 +49,7 @@ export default function Navvbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-[#2E341B] text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -61,14 +61,14 @@ export default function Navvbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
+                {/* <button
                   type="button"
                   className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+                </button> */}
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
