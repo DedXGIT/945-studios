@@ -38,11 +38,10 @@ export default function Pricing() {
                     <div className="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 h-[15.375rem] md:w-auto">
                         {/* <img src="https://www.dstny.se/app/uploads/telia_pp_rgb.png.webp" alt='img' className="w-12"/> */}
                         <div className="mt-3 font-semibold text-lg">ADVANCED CARD</div>
-                        <div className="text-sm font-light w-60 md:w-auto">Unlimited calls</div>
-                        <div className="text-sm font-light w-60 md:w-auto">Unlimited calls</div>
+                        <div className="text-sm font-light w-60 md:w-auto">For all business</div>
+                        <div className="text-sm font-light w-60 md:w-auto">Individuals & Organisations</div>
                         <div className="my-4">
-                            <span className="font-bold text-base">953,-</span>
-                            <span className="font-light text-sm">/month</span>
+                            <span className="font-abc font-bold text-4xl">$ 2499 /-</span>
                         </div>
 
                         <button className="bg-[#F4F5FA] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
@@ -56,11 +55,10 @@ export default function Pricing() {
                     <div className="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 h-[15.375rem] md:w-auto">
                         {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Telenor_Logo.svg/1600px-Telenor_Logo.svg.png" alt='img' className="w-12"/> */}
                         <div className="mt-3 font-semibold text-lg">LEGENDARY CARD</div>
-                        <div className="text-sm font-light w-60 md:w-auto">Up to 100Mbit/s</div>
+                        <div className="text-sm font-light w-60 md:w-auto">Perfect for those who</div>
                         <div className="text-sm font-light w-60 md:w-auto">Up to 100Mbit/s</div>
                         <div className="my-4">
-                            <span className="font-bold text-base">1028,-</span>
-                            <span className="font-light text-sm">/month</span>
+                            <span className="font-abc font-bold text-4xl">$ 3499 /-</span>
                         </div>
 
                         <button className="bg-[#F4F5FA] px-4 py-3 rounded-full  border border-[#F0F0F6] shadow-xl mt-4">
