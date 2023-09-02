@@ -1,11 +1,12 @@
 import './App.css';
-import { Button } from 'flowbite-react';
+import Navvbar from './components/Nav';
+
 
 function App() {
   return (
-    <div>
-      <Button>Click me</Button>
-    </div>
+    <>     
+      <Navvbar/>
+    </>
   );
 }
 
