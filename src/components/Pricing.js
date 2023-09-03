@@ -12,7 +12,7 @@ export default function Pricing() {
         <div className="bg-blue-700 w-full p-10 rounded-xl">
             {/* <!-- headers content--> */}
             <div className="flex flex-col justify-center items-center text-center">
-                <h3 className="text-white font-light max-w-lg mt-5 text-xl">
+                <h3 className="text-white max-w-lg mt-5 text-xl lg:text-[1.4rem]">
                             We Have different Packages for different requirements
                 </h3>
             </div>
@@ -21,7 +21,7 @@ export default function Pricing() {
             <div
                 className="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-evenly items-center mt-10">
                 <div className="bg-[#FFFBEC] rounded-xl">
-                    <div className="flex flex-col p-8 rounded-xl bg-[#FFD800] shadow-xl translate-x-4 translate-y-4 w-96 h-[20rem] md:w-auto">
+                    <div className="flex flex-col p-8 rounded-xl bg-[#FFD800] shadow-xl translate-x-4 translate-y-4 w-96 h-[20rem] md:w-[228px] sm:w-[16rem]">
                         {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Ice_logo.svg/138px-Ice_logo.svg.png?20191213230535" alt='img' className="w-8"/> */}
                         <div className="mt-3 font-semibold text-lg">SIMPLE CARD</div>
                         <div className="flex flex-wrap text-sm font-light">Perfect for people who</div>
@@ -36,7 +36,7 @@ export default function Pricing() {
                 </div>
 
                 <div className="bg-[#F9ECFF] rounded-xl">
-                    <div className="flex flex-col p-8 rounded-xl bg-[#FFD800] shadow-xl translate-x-4 translate-y-4 w-96 h-[20rem] md:w-auto">
+                    <div className="flex flex-col p-8 rounded-xl bg-[#FFD800] shadow-xl translate-x-4 translate-y-4 w-96 h-[20rem] md:w-[228px] sm:w-[16rem]">
                         {/* <img src="https://www.dstny.se/app/uploads/telia_pp_rgb.png.webp" alt='img' className="w-12"/> */}
                         <div className="mt-3 font-semibold text-lg">ADVANCED CARD</div>
                         <div className="text-sm font-light w-60 md:w-auto">For all business</div>
@@ -53,7 +53,7 @@ export default function Pricing() {
 
 
                 <div className="bg-[#ECEEFF] rounded-xl">
-                    <div className="flex flex-col p-8 rounded-xl bg-[#FFD800] shadow-xl translate-x-4 translate-y-4 w-96 h-[20rem] md:w-auto">
+                    <div className="flex flex-col p-8 rounded-xl bg-[#FFD800] shadow-xl translate-x-4 translate-y-4 w-96 h-[20rem] md:w-[228px] sm:w-[16rem]">
                         {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Telenor_Logo.svg/1600px-Telenor_Logo.svg.png" alt='img' className="w-12"/> */}
                         <div className="mt-3 font-semibold text-lg">LEGENDARY CARD</div>
                         <div className="text-sm font-light w-60 md:w-auto">Perfect for those who</div>
