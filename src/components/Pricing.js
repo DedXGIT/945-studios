@@ -5,20 +5,20 @@ export default function Pricing() {
     <>
     <div className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147618483950080120/bg_rev.png')] bg-gray-700 flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
         {/* <!-- main card --> */}
-        <div className="bg-[#F4F5FA] p-10 rounded-xl">
+        <div className="bg-blue-700 w-full p-10 rounded-xl">
             {/* <!-- headers content--> */}
             <div className="flex flex-col justify-center items-center text-center">
-                <div className="max-w-sm font-bold font-sans">
+                <div className="text-white max-w-sm font-bold font-sans">
                     Pricing as per your requirements
                 </div>
-                <div className="font-light max-w-lg mt-5 text-sm">
+                <div className="text-white font-light max-w-lg mt-5 text-sm">
                     We Have different Packages for different requirements
                 </div>
             </div>
 
             {/* <!-- subscriptions --> */}
             <div
-                className="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
+                className="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-evenly items-center mt-10">
                 <div className="bg-[#FFFBEC] rounded-xl">
                     <div className="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 h-[15.375rem] md:w-auto">
                         {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Ice_logo.svg/138px-Ice_logo.svg.png?20191213230535" alt='img' className="w-8"/> */}
@@ -68,9 +68,9 @@ export default function Pricing() {
                 </div>
             </div>
 
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
                 <button className="mt-12 bg-slate-900 text-white px-4 rounded-full py-3">See all subscriptions</button>
-            </div>
+            </div> */}
         </div>
     </div>
 
