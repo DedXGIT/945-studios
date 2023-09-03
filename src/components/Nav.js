@@ -6,8 +6,8 @@ import profileIcon from "../Company_logo2.png";
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
-  { name: 'Pricing', href: '#', current: false },
   { name: 'About', href: '#', current: false },
+  { name: 'Pricing', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
 
@@ -17,7 +17,7 @@ function classNames(...classes) {
 
 export default function Navvbar() {
   return (
-    <Disclosure as="nav" className="bg-[#020103] border-b-[0.2px] border-b-white sticky top-0">
+    <Disclosure as="nav" className="bg-[#020103] border-b-[0.2px] border-b-white sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
