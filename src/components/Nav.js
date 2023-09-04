@@ -3,12 +3,16 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from "../logo_945.png";
 import profileIcon from "../Company_logo2.png";
+
+import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll';
 
-
+// const styles = {
+//   activeClassName: 'underline text-gray-900',
+// }
 
 const navigation = [
-  { name: 'Home', id: '1', href: '#Home', current: true },
+  { name: 'Home', id: '1', href: '#Home', current: false },
   { name: 'About', id: '2', href: '#About', current: false },
   { name: 'Pricing', id: '3', href: '#Pricing', current: false },
   { name: 'Contact', id: '4', href: '#Contact', current: false },
@@ -54,8 +58,9 @@ export default function Navvbar() {
                         key={item.id}
                         offset={-60}
                         duration={500}
+                        spy={true}
                         className={classNames(
-                          item.current ? 'text-[#FFD800]' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'text-[#FFD800]' :'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-full px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
