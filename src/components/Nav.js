@@ -59,8 +59,9 @@ export default function Navvbar() {
                         offset={-60}
                         duration={500}
                         spy={true}
+                        activeClass='active'
                         className={classNames(
-                          item.current ? 'text-[#FFD800]' :'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.active ? 'text-[#FFD800]' :'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-full px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -148,6 +149,7 @@ export default function Navvbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  activeClass='active'
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
