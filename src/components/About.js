@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <>
-    <div className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147618483950080120/bg_rev.png')] bg-gray-700 flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
+    <div id='About' className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147618483950080120/bg_rev.png')] bg-gray-700 flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
         {/* <!-- main card --> */}
         <div className='inline'>
         <h1 className="font-abc mt-0 mb-[10rem] text-[6rem] leading-none text-white md:text-[6rem] lg:text-[7rem]">AB<span className='text-[#FFD800]'>O</span>UT</h1>

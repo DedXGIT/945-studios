@@ -3,12 +3,15 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from "../logo_945.png";
 import profileIcon from "../Company_logo2.png";
+import { Link } from 'react-scroll';
+
+
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
-  { name: 'Pricing', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Home', id: '1', href: '#Home', current: true },
+  { name: 'About', id: '2', href: '#About', current: false },
+  { name: 'Pricing', id: '3', href: '#Pricing', current: false },
+  { name: 'Contact', id: '4', href: '#Contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -45,17 +48,20 @@ export default function Navvbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
+                      <Link
+                        to={item.name}
+                        smooth={true}
+                        key={item.id}
+                        offset={-60}
+                        duration={500}
                         className={classNames(
-                          item.current ? 'bg-[#2E341B] text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          item.current ? 'text-[#FFD800]' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'rounded-full px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

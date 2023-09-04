@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-scroll';
 
 export default function Pricing() {
   return (
     <>
-    <div className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147796900687392788/bg.jpg')] bg-gray-700 flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
+    <div id='Pricing' className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147796900687392788/bg.jpg')] bg-gray-700 flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
         {/* <!-- main card --> */}
         <div className='inline'>
         <h1 className="font-abc mb-2 text-[6rem] leading-none text-white md:text-[6rem] lg:text-[7rem]">P<span className='text-[#FFD800]'>R</span>ICI<span className='text-[#FFD800]'>N</span>G</h1>
@@ -29,9 +30,14 @@ export default function Pricing() {
                         <div className="mt-8">
                             <span className="font-abc text-4xl text-[#FFD800]">$ 1499 /-</span>
                         </div>
-                        <button className="bg-[#F4F5FA] text-black font-abc text-xl px-2 py-2 rounded-full  border border-[#F0F0F6] shadow-xl mt-10">
+                        <Link
+                        to="Contact"
+                        smooth={true}
+                        offset={-60}
+                        duration={500}  
+                        className="bg-[#F4F5FA] text-black text-center cursor-pointer font-abc text-xl px-2 py-2 rounded-full  border border-[#F0F0F6] shadow-xl mt-10">
                             P u r c h a s e
-                        </button>
+                        </Link>
                     </div>
                 </div>                
                 <div className="border-[3.5px] border-[#FFFBEC] rounded-xl">
@@ -43,9 +49,19 @@ export default function Pricing() {
                         <div className="mt-8">
                             <span className="font-abc text-4xl text-[#FFD800]">$ 2499 /-</span>
                         </div>
-                        <button className="bg-[#F4F5FA] text-black font-abc text-xl px-2 py-2 rounded-full  border border-[#F0F0F6] shadow-xl mt-10">
+                        {/* <button className="bg-[#F4F5FA] text-black font-abc text-xl px-2 py-2 rounded-full  border border-[#F0F0F6] shadow-xl mt-10">
                             P u r c h a s e
-                        </button>
+                        </button> */}
+
+                        <Link
+                        to="Contact"
+                        smooth={true}
+                        offset={-60}
+                        duration={500}  
+                        className="bg-[#F4F5FA] text-black text-center cursor-pointer font-abc text-xl px-2 py-2 rounded-full  border border-[#F0F0F6] shadow-xl mt-10">
+                            P u r c h a s e
+                        </Link>
+                        
                     </div>
                 </div>                
                 <div className="border-[3.5px] border-[#FFFBEC] rounded-xl">
@@ -57,9 +73,14 @@ export default function Pricing() {
                         <div className="mt-8">
                             <span className="font-abc text-4xl leading-none text-[#FFD800]">$ 3499 /-</span>
                         </div>
-                        <button className="bg-[#F4F5FA] text-black font-abc text-xl px-2 py-2 rounded-full  border border-[#F0F0F6] shadow-xl mt-10">
+                        <Link
+                        to="Contact"
+                        smooth={true}
+                        offset={-60}
+                        duration={500}  
+                        className="bg-[#F4F5FA] text-black text-center cursor-pointer font-abc text-xl px-2 py-2 rounded-full  border border-[#F0F0F6] shadow-xl mt-10">
                             P u r c h a s e
-                        </button>
+                        </Link>
                     </div>
                 </div>                
             </div>
