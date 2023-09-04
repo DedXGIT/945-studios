@@ -15,6 +15,9 @@ export default function Pricing() {
                 <h3 className="text-white max-w-[95rem] mt-3 text-2xl lg:text-[1.4rem]">
                             Fill details below to fix an appointment with a <span className='text-[#FFD800]'>945 Studios</span> Employee
                 </h3>
+                <div className="container text-white">
+                    hello
+                </div>
             </div>
         </div>
     </div>
