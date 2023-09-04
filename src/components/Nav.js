@@ -3,19 +3,19 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from "../logo_945.png";
 import profileIcon from "../Company_logo2.png";
-
-import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll';
+
+// import { NavLink } from 'react-router-dom';
 
 // const styles = {
 //   activeClassName: 'underline text-gray-900',
 // }
 
 const navigation = [
-  { name: 'Home', id: '1', href: '#Home', current: false },
-  { name: 'About', id: '2', href: '#About', current: false },
-  { name: 'Pricing', id: '3', href: '#Pricing', current: false },
-  { name: 'Contact', id: '4', href: '#Contact', current: false },
+  { name: 'Home', id: '1', href: '#Home'},
+  { name: 'About', id: '2', href: '#About'},
+  { name: 'Pricing', id: '3', href: '#Pricing'},
+  { name: 'Contact', id: '4', href: '#Contact'},
 ]
 
 function classNames(...classes) {
