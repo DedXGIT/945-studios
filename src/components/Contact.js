@@ -3,10 +3,17 @@ import { Link } from 'react-scroll';
 import React from 'react';
 import { Button, Checkbox, Label, TextInput, Textarea } from 'flowbite-react';
 
+const textBoxStyle = {
+    backgroundColor : 'black',
+    color : 'white',
+    fontSize : '1.1rem'
+}
+
+
 export default function Pricing() {
   return (
     <>
-    <div id='Contact' className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147796900687392788/bg.jpg')] bg-gray-700 flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
+    <div id='Contact' className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147618483950080120/bg_rev.png')] bg-gray-700 flex items-center justify-center flex-col bg-[#E5E5E5] min-h-screen">
         {/* <!-- main card --> */}
         <div className='inline'>
             <h1 className="font-abc mb-1 text-[6rem] leading-none text-white md:text-[6rem] lg:text-[7rem]">C<span className='text-[#FFD800]'>O</span>NTA<span className='text-[#FFD800]'>C</span>T</h1>  
@@ -28,7 +35,8 @@ export default function Pricing() {
                                 />
                             </div>
                             <TextInput
-                            className='bg-black text-white border-2 rounded-xl w-[15rem]'
+                            className='border-[1.5px] rounded-xl w-[15rem]'
+                            style={textBoxStyle}
                             placeholder="Your Name"
                             required type="text"
                             />
@@ -42,6 +50,8 @@ export default function Pricing() {
                             </div>
                             <TextInput
                             id="number"
+                            className='border-[1.5px] rounded-xl w-[15rem]'
+                            style={textBoxStyle}
                             placeholder="Your Number"
                             required
                             type="number"
@@ -56,6 +66,8 @@ export default function Pricing() {
                             </div>
                             <Textarea
                                 id="comment"
+                                className='border-[1.5px] rounded-xl w-[15rem]'
+                                style={textBoxStyle}
                                 placeholder="Anything you would like to add"
                                 rows={4}
                                 />
