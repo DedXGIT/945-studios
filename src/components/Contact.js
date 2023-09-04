@@ -6,7 +6,7 @@ import { Button, Checkbox, Label, TextInput, Textarea } from 'flowbite-react';
 const textBoxStyle = {
     backgroundColor : 'black',
     color : 'white',
-    fontSize : '1.1rem'
+    fontSize : '1.1rem',
 }
 
 
@@ -66,14 +66,14 @@ export default function Pricing() {
                             </div>
                             <Textarea
                                 id="comment"
-                                className='border-[1.5px] rounded-xl w-[15rem]'
+                                className='rounded-xl w-[15rem]'
                                 style={textBoxStyle}
                                 placeholder="Anything you would like to add"
                                 rows={4}
                                 />
                         </div>
                         <button
-                            className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg cursor-pointer border-2 border-[#FFD800] hover:bg-[#FFD800] hover:border-[#FFD800] focus:ring-4 focus:ring-gray-400">
+                            className="mt-6 inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg cursor-pointer border-2 border-[#FFD800] hover:bg-[#FFD800] hover:border-[#FFD800] focus:ring-4 focus:ring-gray-400">
                                 Submit Details
                         </button> 
                     </form>
