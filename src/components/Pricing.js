@@ -7,7 +7,7 @@ export default function Pricing() {
     <div id='Pricing' className="bg-cover bg-center bg-no-repeat bg-blend-multiply bg-[url('https://media.discordapp.net/attachments/781836268849987605/1147796900687392788/bg.jpg')] bg-gray-700  flex-col bg-[#E5E5E5] min-h-screen">
         {/* <!-- main card --> */}
         <div className='inline'>
-        <h1 className="font-abc mb-2 text-[6rem] leading-none text-white md:text-[6rem] lg:text-[7rem]">P<span className='text-[#FFD800]'>R</span>ICI<span className='text-[#FFD800]'>N</span>G</h1>
+        <h1 className="font-abc text-center mb-2 pt-[8rem] text-[6rem] leading-none text-white md:text-[6rem] lg:text-[7rem]">P<span className='text-[#FFD800]'>R</span>ICI<span className='text-[#FFD800]'>N</span>G</h1>
             
         </div>
         <div className="w-full p-10 rounded-xl">
