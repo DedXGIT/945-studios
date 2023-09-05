@@ -21,8 +21,6 @@ export default function About() {
                 <span className='text-[#FFD800]'>945 Studios</span> is committed to providing high-quality business ID card services to all businesses and individuals located in Los Santos. Our services are designed to meet the specific needs of our clients and provide them with a hassle-free experience. We are confident that our services will enhance the security and professionalism of our client's business or organization.
                 </h3>
             </div>
-
-            {/* <!-- About --> */}
             
         </div>
     </div>
